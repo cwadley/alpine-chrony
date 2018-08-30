@@ -38,7 +38,7 @@ docker run -d                                                       \
 Chrony runs in un-detached mode in this image, which means that it does not send its logs to a file in the container, but to stdout. To view chrony logs, use `docker logs chrony`.
 
 ## Testing
-ntpupdate can be used to query the running container for the time:
+ntpdate can be used to query the running container for the time:
 ### If you have mapped port 123 to the host:
 `ntpdate -q localhost`
 ### From another container on the same Docker network:
