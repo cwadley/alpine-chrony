@@ -12,7 +12,7 @@ RUN apk add --no-cache build-base linux-headers && \
 
 FROM alpine:3.14
 COPY --from=builder /ntp-bin /usr/sbin
-RUN apk add --no-cache chrony
+RUN apk add --no-cache chrony=4.1-r0
 
 EXPOSE 123/udp
 
